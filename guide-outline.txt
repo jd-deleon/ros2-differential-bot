@@ -1,0 +1,20 @@
+// Install dependencies
+sudo apt install ros-<your_ros_version>-joint-state-publisher-gui
+sudo apt install ros-<your_ros_version>-xacro
+
+// Setup Workspce
+ros2 pkg create --build-type ament_cmake differential-bot
+
+//
+add urdf file
+
+// Launch and build deps
+Add to package xml dependencies
+AAdd launch file
+
+// Build
+colcon build
+. install/setup.bash
+
+//Launch
+ros2 launch launch/display.launch.py
