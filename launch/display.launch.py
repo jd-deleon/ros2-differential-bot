@@ -6,7 +6,7 @@ import os
 
 def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='differential-bot').find('differential-bot')
-    default_model_path = os.path.join(pkg_share, 'src/description/base-bot.urdf')
+    default_model_path = os.path.join(pkg_share, 'src/description/base-bot-2.urdf')
     default_rviz_config_path = os.path.join(pkg_share, 'rviz/urdf.rviz')
 
     robot_state_publisher_node = launch_ros.actions.Node(
