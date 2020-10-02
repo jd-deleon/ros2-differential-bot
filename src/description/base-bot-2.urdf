@@ -96,8 +96,8 @@
     </joint>
   </xacro:macro>
 
-  <xacro:wheel prefix="drivewhl_l" x_reflect="-1" y_reflect="-1" />
-  <xacro:wheel prefix="drivewhl_r" x_reflect="-1" y_reflect="1" />
+  <xacro:wheel prefix="drivewhl_l" x_reflect="-1" y_reflect="1" />
+  <xacro:wheel prefix="drivewhl_r" x_reflect="-1" y_reflect="-1" />
 
   <link name="caster_whl">
     <visual>
