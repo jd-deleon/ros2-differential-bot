@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<robot name="differential-bot" xmlns:xacro="http://ros.org/wiki/xacro">
+<robot name="sam-bot" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!-- Define robot constants -->
   <xacro:property name="base_width" value="0.31"/>
@@ -99,7 +99,7 @@
   <xacro:wheel prefix="drivewhl_l" x_reflect="-1" y_reflect="1" />
   <xacro:wheel prefix="drivewhl_r" x_reflect="-1" y_reflect="-1" />
 
-  <link name="caster_whl">
+  <link name="front_caster">
     <visual>
       <geometry>
         <sphere radius="${-(wheel_radius+wheel_zoff-(base_height/2))}"/>
@@ -121,7 +121,7 @@
 
   <joint name="caster_joint" type="fixed">
     <parent link="base_link"/>
-    <child link="caster_whl"/>
+    <child link="front_caster"/>
     <origin xyz="${caster_xoff} 0.0 ${-(base_height/2)}" rpy="0 0 0"/>
   </joint>
 
